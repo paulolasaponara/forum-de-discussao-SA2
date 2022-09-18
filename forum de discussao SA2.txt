@@ -1,0 +1,99 @@
+Para marcar um título, você vai usar # a quantidade de vezes que irá representar o nível do título. Exemplo:
+
+
+# Título nível 1
+## Título nível 2
+### Título nível 3
+#### Título nível 4
+##### Título nível 5
+###### Título nível 6
+
+
+Parseia para:
+
+<h1>Título nível 1</h1>
+<h2>Título nível 2</h2>
+<h3>Título nível 3</h3>
+<h4>Título nível 4</h4>
+<h5>Título nível 5</h5>
+<h6>Título nível 6</h6>
+
+
+Para gerar parágrafos, basta você escrever o texto em uma linha:
+
+
+1Este é um parágrafo.
+2 
+3Este é outro parágrafo.
+
+
+Isso gera:
+
+
+1<p>Este é um parágrafo.</p>
+2<p>Este é outro parágrafo.</p>
+
+Note que eu pulei uma linha entre os parágrafos. Se eu não fizesse isso, o código gerado seria:
+
+
+1<p>Este é um parágrafo. Este é outro parágrafo.</p>
+
+
+
+Ênfase (<strong> e <em>)
+Para enfatizar uma palavras (<em>), usamos um * ou _:
+
+1Javascript é _cool_!
+
+
+Para gerar links, você usa [](). Dentro dos colchetes você coloca o texto do link, e dentro dos parênteses, você coloca a URL:
+
+
+1[Blog do Da2k](https://blog.da2k.com.br)
+Que irá gerar:
+
+1<a href="https://blog.da2k.com.br">Blog do Da2k</a>
+
+
+Se o texto do seu link é o próprio link, você pode envolvê-lo entre < e >, que o link será gerado automaticamente:
+
+1<https://www.google.com.br>
+Irá gerar:
+
+1<a href="https://www.google.com.br">https://www.google.com.br</a>
+
+
+
+
+Para criar blocos de citação, você usa o sinal de >:
+
+
+1> Esse é um bloco de citação.
+2> Ele pode ter várias linhas por parágrafo.
+3>
+4> Inclusive, dando um espaço, você tem um novo parágrafo.
+Que gera o seguinte:
+
+
+1<blockquote>
+2  <p>
+3    Esse é um bloco de citação.
+4    Ele pode ter várias linhas.
+5  </p>
+6  <p>Inclusive, uma quebra de linha.</p>
+7</blockquote>
+
+
+
+Geração de imagens é bem parecido com a geração de links: você só precisa adicionar uma ! no início. E o texto que você coloca entre os colchetes, é usado como alt na imagem:
+
+1![Banana](http://cdn.osxdaily.com/wp-content/uploads/2013/07/dancing-banana.gif)
+Esse código vai gerar:
+
+1<img src="http://cdn.osxdaily.com/wp-content/uploads/2013/07/dancing-banana.gif" alt="Banana" />
+
+
+
+
+
+
